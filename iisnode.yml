@@ -1,0 +1,3 @@
+loggingEnabled: false
+watchedFiles: *.js;iisnode.yml;package.json
+node_env: production

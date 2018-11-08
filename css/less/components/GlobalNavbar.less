@@ -1,0 +1,291 @@
+.GlobalNavbar {
+    min-height: 0;
+    font-size: .85rem;
+    &.navbar {
+        margin-bottom: 0;
+    }
+    &.navbar-default {
+        border: none;
+        background: transparent;
+        .navbar-collapse, 
+        .navbar-form {
+            border: none;
+        }
+    }
+    >.container {
+        padding: 4px 0 3px;
+    }
+    a {
+        font-weight: normal;
+    }
+    .navbar-collapse {
+        .navbar-form {
+            padding: 0;
+            margin: 0 @padding-xs-horizontal;
+            .btn-sm, .btn-group-sm > .btn {
+                border-top-left-radius: 0;
+            }
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }    
+    .btn-sm, .btn-group-sm > .btn {
+        border-radius: 0 0 4px 0;
+        border-width: 1px;
+        padding: 2px 8px; // To align Sign In and Search buttons with inline form fields
+        line-height: inherit; // To align Sign In and Search buttons with inline form fields
+        margin-top: 1px; // To align Sign In and Search buttons with inline form fields
+        &:active:focus {
+            border-color: @gray-light;
+        }
+    }
+
+    .navbar-text {
+        margin: 0;
+        margin-right: 2rem;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: .3rem .15rem;
+        line-height: 1.15;
+        &.authuser {
+            margin-right: 0;
+            float: left;
+        }
+    }
+    .navbar-nav {
+        > li {
+            &::before {
+                content: '\2022';
+                float: left;
+                color: @gray-lighter;
+                font-size: 3em;
+                line-height: 0;
+                margin-top: .35em;
+            }
+            &:first-of-type {
+                &::before {
+                    content: none;
+                }
+                a {
+                    padding-left: .75rem;
+                }
+            }
+            > a {
+                margin: 0;
+                padding: .45rem .75rem .3rem 1.6rem;
+                line-height: 1.15;
+            }
+        }
+        &.useractions {
+            float: left;
+            margin: 0;
+        }
+    }
+    .navbar-form {
+        padding: 0;
+        margin: 0;
+        .form-group {
+            display: inline-block; // Bootstrap's definition starts above 768px;
+            margin-bottom: 0; // Bootstrap's definition starts above 768px;
+            vertical-align: middle; // Bootstrap's definition starts above 768px;
+        }
+    }
+    .page-actions {
+        button {
+            background-color: @gray-light;
+            color: white;
+            text-shadow: none;
+            // border: 1px solid @gray-light;
+            // margin-top: 0;
+            &:not(:first-of-type) {
+                border-bottom-right-radius: 0;
+                border-right: 1px solid white;
+            }
+            &:last-of-type {
+                margin-left: .5rem;
+                border-top-left-radius: @border-radius-base;
+            }
+            &:focus {
+                outline-color: @gray-lighter;
+            }
+        }
+    }
+    .logo {
+        padding: 0;
+        margin-right: 12px;
+        img {
+            max-height: 22px;
+        }
+    }
+
+    
+
+    #member-signin {
+        background-color: #F8971D;
+        padding: 4px 8px;
+        border-radius: 0 0 4px 4px;
+        margin-top: -4px;
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    #signin-options {
+        display: none;
+        background-color: white;
+        width: 300px;
+        list-style: none;
+        margin-bottom: 0;
+        border-radius: 0 4px 4px;
+        padding: 0;
+        position: absolute;
+        border: 1px solid #F8971D;
+        left: 0;
+        z-index: @zindex-modal;
+        li {
+            padding: 8px;
+            border-bottom: 1px solid lightgray;
+            display: block; // Overrules .GlobalNavbar .navbar-nav li inline-block rule
+            &:hover {
+                background-color: #eee;
+            }
+            &:last-child {
+                padding: 8px;
+                border-bottom: none;
+            }
+            a {
+                color: black;
+                font-size: 1.1em;
+            }
+        }
+    }
+
+
+    @media (min-width: @screen-xs-min) {        
+        .page-actions {
+            button {
+                .pull-right;
+            }
+        }
+    }
+
+
+    @media (max-width: @screen-md-min) { // 992px
+        .navbar-form {
+            margin-bottom: 8px;
+        }
+        .nav-global,
+        .phoneno {
+            float: none!important;
+            clear: both;
+            margin: 0 auto;
+            // text-align: center; // "Center" looks misaligned when the content is almost as wide as the justified content.  It's better to keep everything aligned to one side or the other.  -R. Scott, 5/10/2017
+        }
+        .navbar-nav,
+        .phoneno {
+            li {
+                float: none;
+                display: inline-block;
+            }
+        }
+    }
+
+    @media (max-width: @screen-sm-min) { // 768px
+        .form-ssosignon {
+            display: block;
+            float: left;
+        }
+        .form-control {
+            display: inline-block;
+        }
+        .search {
+            display: block;
+            float: right;
+        }
+        .btn-print {
+            display: none;
+        }
+    }
+    
+
+    @media (max-width: 650px) {
+        #member-signin {
+            padding: 8px 8px;
+            font-size: 1.25rem;
+        }
+
+        #signin-options {
+            width: 100%;
+            position: relative;
+            border: none;
+            left: 0;
+            border-radius: 0 0 2px 2px;
+        }
+    }
+
+    @media (max-width: @screen-xs-min) { // 480px
+        .navbar-nav.nav-global > li {
+            &::before {
+                margin-top: 1rem;
+            }
+            > a {
+                padding: .5rem 0 .5rem 1.2rem;
+                white-space: nowrap;
+            }
+            &:first-of-type {
+                > a {
+                    padding-left: 0;
+                }
+            }
+        }
+        .page-actions {
+            margin-bottom: @padding-base-vertical;
+        }
+        .search {
+            display: none;
+        }
+        .form-group-sm {
+            width: 80%;
+            .form-control {
+                width: 50%;
+            }
+        }
+        .btn-sm {
+            // width: 20%;
+            white-space: nowrap;
+        }
+        .nav-global,
+        .phoneno {
+            font-size: .9rem;
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+// High Contrast
+.hc {
+    .GlobalNavbar {
+        .navbar-nav {
+            > li::before {
+                color: black;
+            }
+        }
+        #member-signin {
+            a {
+                &:focus {
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

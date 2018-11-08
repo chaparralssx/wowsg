@@ -1,0 +1,151 @@
+fieldset {
+    margin-bottom: @padding-large-vertical;
+}
+
+
+legend {
+    font-weight: bold;
+    color: @brand-primary;
+}
+
+.form-control {
+    // border-radius: 0; // handled in variables.less
+    border-top: 1px solid @brand-success;
+    border-bottom: 1px solid @brand-success;
+    border-left: 1px solid @gray-lighter;
+    border-right: 1px solid @gray-lighter;
+    //margin-top: -1px;
+    margin-right: -2px;
+    padding: @padding-small-vertical @padding-small-horizontal;
+    height: @input-height-small; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    &:first-of-type {
+        border-left: 1px solid @brand-success;
+    }
+    &:last-of-type {
+        border-right: 1px solid @brand-success;
+    }
+    &:focus {
+    // border-color: @brand-success; // Set in variables.less
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(193, 205, 35, .6);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(193, 205, 35, .6);
+    }
+}
+
+
+.has-error .form-control:first-of-type {
+    border-left: 1px solid @brand-danger; // Because we are specific with .form-control:first-of-type above, we need to make the .has error more specific to overwrite it (otherwise, the side borders are green)
+}
+.has-error .form-control:last-of-type {
+    border-right: 1px solid @brand-danger; // Because we are specific with .form-control:first-of-type above, we need to make the .has error more specific to overwrite it (otherwise, the side borders are green)
+}
+
+.form-group-sm .form-control {
+    padding: 4px 4px;
+    height: 24px;
+    width: 12em;
+    border-radius: 0;
+    &:first-of-type {
+        border-top-left-radius: 4px;
+    }
+}
+button {
+    background-color: @brand-primary;
+    color: white;
+    font-weight: bold;
+    &:hover {
+        background-color: darken(@brand-primary, 10%);
+    }
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 3px 8px;    
+    -webkit-appearance: none;
+    border: none;
+}
+
+
+.RFLayout {
+    .table {
+        .control-label {
+            display: block;
+            text-align: right;
+            margin-bottom: 0;
+        }
+        .checkbox {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .inputHr, 
+        .inputMin {
+            display: inline-block;
+            margin-right: @padding-small-horizontal;
+            margin-bottom: @padding-small-vertical;
+            select {
+                width: 40px;
+                display: inline-block;
+                margin-right: @padding-small-horizontal;
+            }
+            label {
+                display: inline-block;
+            }
+        }
+        .inputChargeReason {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+label {
+    @media (min-width: @screen-sm) {
+        &.required:before {
+            color: @brand-danger;
+            content: "* ";
+        }
+    }
+    @media (max-width: @screen-sm-max) {
+        &.required:after {
+            color: @brand-danger;
+            content: " *";
+        }
+    }
+}
+.required-message {
+    color: @brand-danger;
+    font-style: italic;
+    .small;
+    @media (min-width: @screen-sm) {
+        &:before {
+            content: "* ";
+        }
+    }
+    @media (max-width: @screen-sm-max) {
+        &:after {
+            content: " *";
+        }
+    }
+}
+
+.help-block {
+    .small;
+}
+
+
+
+
+
+// High contrast
+.hc {
+    .form-control {
+        border-color: black;
+        color: black;
+        &:last-of-type {
+            border-color: black;
+        }
+    }
+    legend,
+    .help-block {
+        color: black;
+    }
+}

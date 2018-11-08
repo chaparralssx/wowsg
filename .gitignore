@@ -1,0 +1,9 @@
+.idea
+.next
+node_modules
+bower_components
+test-results.xml
+*.log
+coverage
+jest/arc-jest-output.tmp/*
+/static/compiled

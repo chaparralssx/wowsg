@@ -1,0 +1,32 @@
+html,
+body {
+    font-size: @font-size-base;
+}
+
+p {
+    margin: 0 0 (floor(@font-size-base * 1.15));
+    max-width: 75em;
+}
+.transactionid {
+    color: blue;
+}
+.custid {
+    color: green;
+}
+
+@media (max-width: @screen-xxs-max) { // 479px
+    // html,
+    // body {
+    //     font-size: @font-size-base * 1.15;
+    // }
+}
+
+
+
+// High Contrast
+.hc {
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}

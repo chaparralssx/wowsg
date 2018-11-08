@@ -1,0 +1,82 @@
+// The following CSS structure in this project is based on Harry Roberts' (aka csswizardry)
+// system for organizing CSS known as the ITCSS Architecture (http://itcss.io/).
+// ITCSS = Inverted Triangle CSS:
+// "...a collection of principles and metrics by which developers should group and 
+// order their CSS in order to keep it scalable, terse, logical, and manageable." -H.R.
+
+// \----------------------------------------/
+//  \         Settings (Variables)         /
+//   \------------------------------------/
+//    \     Tools (Functions/Mixins)     /
+//     \--------------------------------/
+//      \       Vendor (Generic)       /
+//       \ ---------------------------/
+//        \   Base (Bare Elements)   /
+//         \------------------------/
+//          \       Layouts        /
+//           \     (Objects)      /
+//            \------------------/
+//             \   Components   / 
+//              \ (UI Classes) /
+//               \------------/
+//                \  Trumps  /
+//                (!important,
+//                  \ IDs) /
+//                   \    / 
+//                    \  /
+//                     \/
+
+
+// SETTINGS (Variables)
+// Set our own variables (customized local Bootstrap variables.less file)
+@import "variables";
+
+// TOOLS (Functions/Mixins)
+// @import "tools/"
+
+
+// VENDOR (Generic, 3rd Party)
+// Import the Bootstrap LESS files without variables.less
+@import "less/bootstrap-no-vars";
+
+// ICONS
+
+// BASE (Base Elements)
+@import "less/base/alerts";
+@import "less/base/base";
+@import "less/base/body";
+@import "less/base/buttons";
+@import "less/base/button-groups";
+@import "less/base/forms";
+@import "less/base/grid";
+@import "less/base/jargon";
+@import "less/base/navs";
+@import "less/base/pagination";
+@import "less/base/panels";
+@import "less/base/tables";
+@import "less/base/type";
+@import "less/base/wells";
+
+// COMPONENTS (UI Classes)
+@import "less/components/Carousel";
+@import "less/components/ColorPallete";
+@import "less/components/DateNav";
+@import "less/components/Footer";
+@import "less/components/GlobalNavbar";
+@import "less/components/Jumbotron";
+@import "less/components/Masthead";
+@import "less/components/PrimaryNav";
+@import "less/components/RFFooter";
+@import "less/components/RFLayout";
+@import "less/components/RFMasthead";
+@import "less/components/RFMenu";
+@import "less/components/RFPrimaryNav";
+@import "less/components/SignInForm";
+@import "less/components/StatusBox";
+
+// PAGES
+@import "less/pages/networkhealth-home";
+
+
+// TRUMPS (IDs and !important)
+// Note: These are often completely avoidable with good CSS, so there isn't a placeholder folder

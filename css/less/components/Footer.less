@@ -1,0 +1,136 @@
+.Footer {
+    margin-top: @padding-large-vertical;
+    padding: @padding-large-vertical 0;
+    background-color: @gray-lighter;
+    border-top: 1px solid #D9D9D9;
+    color: @gray; // @gray-light does not satisfy WCAG 2 accessibility contrast
+    @media (min-width: @screen-sm-min) { // 992px+
+        .container {
+            padding: 0;
+        }
+    }
+    @media (max-width: @screen-sm-min) { // 480px-
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .primary,
+    .fineprint {
+        .make-row();
+    }
+    .fineprint {
+        font-size: @font-size-small;
+        @media (min-width: @screen-sm-min) {
+            margin-top: @padding-large-vertical;
+        }
+    }
+    .brandcontact,
+    .links,
+    .social {
+        .make-sm-column(3);
+    }
+    .brandcontact {
+        .logo {
+            margin-bottom: 16px;
+            img {
+                width: 200px;
+            }
+            @media (min-width: @screen-xs-min) {
+                .make-xs-column(6);
+                .make-sm-column(12);
+                padding: 0;
+            }
+        }
+        .contact {
+            line-height: 1.15;
+            @media (min-width: @screen-xs-min) {
+                .make-xs-column(6);
+                .make-sm-column(12);
+                padding: 0;
+            }
+            .title {
+                margin-top: 0;
+                margin-bottom: 4px;
+            }
+        }
+        .telephone {
+            font-size: 1.5em;
+        }
+        .link {
+            margin-top: 4px;
+        }
+        @media (max-width: @screen-sm-min) {
+            margin-bottom: @padding-large-vertical;
+        }
+    }
+    .links {
+        .make-xs-column(12);
+        .make-sm-column(6);
+        .nav {
+            @media (min-width: @screen-xs-min) {
+                .make-xs-column(6);
+                padding: 0;
+            }
+        }
+        @media (max-width: @screen-sm-min) {
+            margin-bottom: @padding-large-vertical;
+        }
+    }
+    .legal {
+        .make-sm-column(12);
+        line-height: 1.15;
+        p {
+            max-width: none;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-bottom: .75em;
+        }
+    }
+    .brandcontact {
+        img {
+            max-height: 70px;
+        }
+        .title {
+            .h4;
+        }
+    }
+    .nav > li > a {
+        color: @gray-light;
+        font-weight: bold;
+        padding: 0 0 .5em;
+        &:hover {
+            color: @gray-darker;
+        }
+    }
+    .social {
+        li {
+            margin-bottom: .9em;
+            .icon {
+                display: inline-block;
+                height: 2em;
+                margin-right: .5em;
+                margin-top: -.25em;
+                img {
+                    height: 2em;
+                }
+            }
+            @media (min-width: @screen-xs-min) and (max-width: @screen-sm-min) {
+                float: left;
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+.hc {
+    .Footer {
+        color: black;
+        .nav {
+            > li {
+                > a {
+                    color: black;
+                }
+            }
+        }
+    }
+}

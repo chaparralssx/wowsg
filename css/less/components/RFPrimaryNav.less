@@ -1,0 +1,52 @@
+.RFPrimaryNav {
+    margin: 0 -2px;
+
+    .breadcrumbs {
+        display: inline-block;
+        a {
+            font-size: .8rem;
+            color: black;
+            &::before {
+                content:"\\";
+                color: @brand-info;
+                margin: 0 1px;
+            }
+        }
+        a:first-of-type {
+            margin-left: 4px;
+            &::before {
+                content:"";
+                margin: 0;
+            }
+        }
+    }
+
+    @media (min-width: @screen-sm-min) { // 768px+
+    }
+    
+    @media (max-width: @screen-md-min) and (min-width: @screen-sm-min) { // 992px
+    }
+
+    @media (max-width: @screen-sm-min) { // 768px
+    }
+
+    @media (max-width: @screen-xs-min) { // 480px
+        
+    }
+}
+
+
+
+// High Contrast
+.hc {
+    .PrimaryNav .navbar-nav > li:hover > a,
+    .PrimaryNav .navbar-nav > li:focus > a,
+    .PrimaryNav .navbar-nav > li.open:hover > a:focus {
+        color: black;
+    }
+    .PrimaryNav.navbar-default .navbar-nav > .active > a, 
+    .PrimaryNav.navbar-default .navbar-nav > .active > a:hover, 
+    .PrimaryNav.navbar-default .navbar-nav > .active > a:focus {
+        color: black;
+    }
+}
