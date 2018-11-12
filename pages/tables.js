@@ -9,12 +9,12 @@ export default class extends Page {
         return (
             <Layout title="Tables | " pathname={this.props.pathname}>
                 <PageHeader>
-                    Tables <small><a href="https://react-bootstrap.github.io/components.html#tables" target="_blank">React Documentation</a> <a href="http://getbootstrap.com/css/#tables" target="_blank">Bootstrap Documentation</a></small>
+                    Tables <small><a href="http://getbootstrap.com/css/#tables" target="_blank">Bootstrap Documentation</a></small>
                 </PageHeader>
 
                 <Grid>
                     <Row>
-                        <Col sm={12}>
+                        <Col sm={12} className="unapproved">
                             <h2>Tables</h2>
                             <ul>
                                 <li>Border: 1px solid #ddd</li>

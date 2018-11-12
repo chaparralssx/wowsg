@@ -8,7 +8,7 @@ export default class extends Page {
         return (
             <Layout title="Panels | " pathname={this.props.pathname}>
                 <PageHeader>
-                    Panels <small><a href="https://react-bootstrap.github.io/components.html#panels" target="_blank">Documentation</a></small>
+                    Panels
                 </PageHeader>
 
                 <p>Panel's apply border and padding to contain content. You can create a panel with <span className="nt">&lt;panel&gt;</span>.</p>
