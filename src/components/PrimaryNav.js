@@ -34,6 +34,7 @@ class PrimaryNav extends React.Component {
                             <MenuItem eventKey={2.8} onClick={(e) => link.handleLink(e, '/tabs')} href="/tabs" active={link.isActive(this.props.pathname, '/tabs')}>Tabs</MenuItem>
                             <MenuItem eventKey={2.9} onClick={(e) => link.handleLink(e, '/tables')} href="/tables" active={link.isActive(this.props.pathname, '/tables')}>Tables</MenuItem>
                             <MenuItem eventKey={2.10} onClick={(e) => link.handleLink(e, '/typography') } href="/typography" active={link.isActive(this.props.pathname, '/typography')}>Typography</MenuItem>
+                            <MenuItem eventKey={2.11} onClick={(e) => link.handleLink(e, '/words') } href="/words" active={link.isActive(this.props.pathname, '/words')}>Words</MenuItem>
                         </NavDropdown>
                         <NavDropdown eventKey={2} title="Warehousing" id="nh-nav-dropdown">
                             <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/warehousing')} href="/">Warehousing &amp; Distribution</MenuItem>
