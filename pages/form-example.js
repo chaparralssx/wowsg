@@ -44,7 +44,7 @@ class FormExample extends React.Component {
 
                                     <FormGroup controlId="formBasicText" validationState={this.getValidationState()} >
                                         <Col componentClass={ControlLabel} sm={2} className="required">
-                                            Input label
+                                            Input Label
                                         </Col>
                                         <Col sm={4}>
                                             <FormControl type="text" value={this.state.value} placeholder="Input field placeholder text" onChange={this.handleChange} />
@@ -78,7 +78,7 @@ class FormExample extends React.Component {
 
                                     <FormGroup>
                                         <Col componentClass={ControlLabel} sm={2}>
-                                            Check boxes
+                                            Check Boxes
                                         </Col>
                                         <Col sm={4}>
                                             <Checkbox name="example-checkboxes" inline>
@@ -98,7 +98,7 @@ class FormExample extends React.Component {
 
                                     <FormGroup>
                                         <Col componentClass={ControlLabel} sm={2}>
-                                            Radio buttons
+                                            Radio Buttons
                                         </Col>
                                         <Col sm={4}>
                                             <Radio name="example-radios" inline>
@@ -121,11 +121,11 @@ class FormExample extends React.Component {
                                         </Col>
                                         <Col sm={4}>
                                             <FormControl componentClass="select" placeholder="select">
-                                                <option value="select">Select one</option>
-                                                <option value="opt2">Option one</option>
-                                                <option value="opt3">Option two</option>
-                                                <option value="opt4">Option three</option>
-                                                <option value="opt5">Option four</option>
+                                                <option value="select">Select One</option>
+                                                <option value="opt2">Option One</option>
+                                                <option value="opt3">Option Two</option>
+                                                <option value="opt4">Option Three</option>
+                                                <option value="opt5">Option Four</option>
                                             </FormControl>
                                         </Col>
                                     </FormGroup>
@@ -133,15 +133,15 @@ class FormExample extends React.Component {
 
                                     <FormGroup controlId="formControlsSelectMultiple">
                                         <Col componentClass={ControlLabel} sm={2}>
-                                            Multiple select
+                                            Multiple Select
                                     </Col>
                                         <Col sm={4}>
                                             <FormControl componentClass="select" multiple>
                                                 <option value="select">Select one or more</option>
-                                                <option value="opt2">Option one</option>
-                                                <option value="opt3">Option two</option>
-                                                <option value="opt4">Option three</option>
-                                                <option value="opt5">Option four</option>
+                                                <option value="opt2">Option One</option>
+                                                <option value="opt3">Option Two</option>
+                                                <option value="opt4">Option Three</option>
+                                                <option value="opt5">Option Four</option>
                                             </FormControl>
                                         </Col>
                                     </FormGroup>
@@ -157,7 +157,7 @@ class FormExample extends React.Component {
 
                                     <FormGroup>
                                         <Col componentClass={ControlLabel} sm={2}>
-                                            Static text
+                                            Static Text
                                     </Col>
                                         <Col sm={4}>
                                             <FormControl.Static>email@example.com</FormControl.Static>

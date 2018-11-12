@@ -123,7 +123,7 @@ export default class extends Page {
                             <Form horizontal>
                                 <FormGroup controlId="formBasicText" >
                                     <Col componentClass={ControlLabel} sm={2} className="required">
-                                        Input label
+                                        Input Label
                                     </Col>
                                     <Col sm={4}>
                                         <FormControl type="text" placeholder="Input field placeholder text" />
@@ -142,8 +142,9 @@ export default class extends Page {
                     <h2>Select Options</h2>
 
                     <ul>
-                        <li title="Defined 11/12/2018">Case: Sentence case</li>
+                        <li title="Defined 11/12/2018">Case: Title Case</li>
                         <li title="Defined 11/12/2018">When a default option is not appropriate, start the options list with "Select One" (note capital "O")</li>
+                        <li title="Defined 11/12/2018">If the selection is optional, follow the "Select One" text with " (optional)" (lower case)</li>
                     </ul>
 
                     <div className="example" title="Defined 11/12/2018">
@@ -154,11 +155,11 @@ export default class extends Page {
                                 </Col>
                                 <Col sm={4}>
                                     <FormControl componentClass="select" placeholder="select">
-                                        <option value="select">Select one</option>
-                                        <option value="opt2">Option one</option>
-                                        <option value="opt3">Option two</option>
-                                        <option value="opt4">Option three</option>
-                                        <option value="opt5">Option four</option>
+                                        <option value="select">Select One</option>
+                                        <option value="opt2">Option One</option>
+                                        <option value="opt3">Option Two</option>
+                                        <option value="opt4">Option Three</option>
+                                        <option value="opt5">Option Four</option>
                                     </FormControl>
                                 </Col>
                             </FormGroup>
