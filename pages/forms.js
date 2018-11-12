@@ -9,7 +9,7 @@ export default class extends Page {
         return (
             <Layout title="Forms | " pathname={this.props.pathname}>
                 <PageHeader>
-                    Forms <small><a href="https://react-bootstrap.github.io/components.html#forms" target="_blank">React Documentation</a></small>
+                    Forms
                 </PageHeader>
 
 
@@ -19,12 +19,7 @@ export default class extends Page {
 
                     <p>In long forms, consider grouping inputs into fieldsets.</p>
 
-                </section>
-
-
-                <section>
-
-                    <h2>Legend</h2>
+                    <h3>Legend</h3>
 
                     <p>Label each fieldset with a legend.</p>
 
@@ -43,7 +38,7 @@ export default class extends Page {
                 </section>
 
 
-                <section>
+                <section className="unapproved">
 
                     <h2>"Required" Message</h2>
 
@@ -87,54 +82,57 @@ export default class extends Page {
                         <li>Case: Title Case (capitalize primary words)</li>
                     </ul>
 
-                    <h3>"Required" Inputs</h3>
+                    <article className="unapproved">
+                        <h3>"Required" Inputs</h3>
 
-                    <ul>
-                        <li>Place a @brand-danger (#c9442a) colored asterisk (*) before "required" field labels *</li>
-                    </ul>
+                        <ul>
+                            <li>Place a @brand-danger (#c9442a) colored asterisk (*) before "required" field labels *</li>
+                        </ul>
 
-                    <p className="small">* Automatic when .required class is added to a label, e.g. <code>&lt;label class="required"&gt;</code></p>
+                        <p className="small">* Automatic when .required class is added to a label, e.g. <code>&lt;label class="required"&gt;</code></p>
 
-                    <Row>
+                        <Row>
 
-                        <Col sm={6}>
+                            <Col sm={6}>
 
-                            <h3>Desktop/Tablet Widths</h3>
-                            <ul>
-                                <li>Place to the left of respective input field *</li>
-                                <li>Align right *</li>
-                                <li>Place "Required" asterisk before the field label and separated with a space *</li>
-                            </ul>
+                                <h3>Desktop/Tablet Widths</h3>
+                                <ul>
+                                    <li>Place to the left of respective input field *</li>
+                                    <li>Align right *</li>
+                                    <li>Place "Required" asterisk before the field label and separated with a space *</li>
+                                </ul>
 
-                            <p className="small">* Automatic when the label element is used, e.g. <code>&lt;label&gt;Input Label&lt;/label&gt;</code></p>
+                                <p className="small">* Automatic when the label element is used, e.g. <code>&lt;label&gt;Input Label&lt;/label&gt;</code></p>
 
-                        </Col>
+                            </Col>
 
-                        <Col sm={6}>
+                            <Col sm={6}>
 
-                            <h3>Mobile Widths</h3>
-                            <ul>
-                                <li>Place above the respective input field *</li>
-                                <li>Align left *</li>
-                                <li>Place "Required" asterisk after the field label and separated with a space *</li>
-                            </ul>
+                                <h3>Mobile Widths</h3>
+                                <ul>
+                                    <li>Place above the respective input field *</li>
+                                    <li>Align left *</li>
+                                    <li>Place "Required" asterisk after the field label and separated with a space *</li>
+                                </ul>
 
-                        </Col>
+                            </Col>
 
-                    </Row>
+                        </Row>
 
-                    <div className="example">
-                        <Form horizontal>
-                            <FormGroup controlId="formBasicText" >
-                                <Col componentClass={ControlLabel} sm={2} className="required">
-                                    Input label
-                                </Col>
-                                <Col sm={4}>
-                                    <FormControl type="text" placeholder="Input field placeholder text" />
-                                </Col>
-                            </FormGroup>
-                        </Form>
-                    </div>
+                        <div className="example">
+                            <Form horizontal>
+                                <FormGroup controlId="formBasicText" >
+                                    <Col componentClass={ControlLabel} sm={2} className="required">
+                                        Input label
+                                    </Col>
+                                    <Col sm={4}>
+                                        <FormControl type="text" placeholder="Input field placeholder text" />
+                                    </Col>
+                                </FormGroup>
+                            </Form>
+                        </div>
+
+                    </article>
 
                 </section>
 
@@ -144,14 +142,15 @@ export default class extends Page {
                     <h2>Select Options</h2>
 
                     <ul>
-                        <li>Case: Sentence case</li>
+                        <li title="Defined 11/12/2018">Case: Sentence case</li>
+                        <li title="Defined 11/12/2018">When a default option is not appropriate, start the options list with "Select One" (note capital "O")</li>
                     </ul>
 
-                    <div className="example">
+                    <div className="example" title="Defined 11/12/2018">
                         <Form horizontal>
                             <FormGroup controlId="formControlsSelect">
                                 <Col componentClass={ControlLabel} sm={2}>
-                                    Select
+                                    Input Label
                                 </Col>
                                 <Col sm={4}>
                                     <FormControl componentClass="select" placeholder="select">
@@ -174,7 +173,7 @@ export default class extends Page {
                     <h2>Placeholder Text</h2>
 
                     <ul>
-                        <li>Case: Sentence case</li>
+                        <li title="Defined 11/12/2018">Case: Sentence case</li>
                     </ul>
 
                     <div className="example">
@@ -193,7 +192,7 @@ export default class extends Page {
                 </section>
 
 
-                <section>
+                <section className="unapproved">
                     <h2>Helper Text (e.g. input requirements)</h2>
 
                     <ul>
@@ -214,18 +213,6 @@ export default class extends Page {
                             </FormGroup>
                         </Form>
                     </div>
-
-                </section>
-
-
-
-                <section>
-
-                    <h2>Form Validation</h2>
-
-                    <ul>
-                        <li></li>
-                    </ul>
 
                 </section>
 
