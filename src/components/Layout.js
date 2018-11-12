@@ -9,6 +9,7 @@ import GlobalNavbar from './GlobalNavbar'
 import React from 'react'
 import Router from 'next/router'
 import NProgress from 'nprogress'
+import PrimaryNav from './PrimaryNav'
 
 Router.onRouteChangeStart = (url) => {
     console.log(`Loading: ${url}`);
@@ -32,9 +33,9 @@ export default ({ children, title = '', pathname, className }) => (
             <link href="/static/compiled/css/styleguide.css" rel="stylesheet" type="text/css" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
         </Head>
+
+        <PrimaryNav/>
         
-        
-        <GlobalNavbar/>
 
         <Grid>
 
@@ -42,17 +43,11 @@ export default ({ children, title = '', pathname, className }) => (
                 <Masthead/>
             </Row>
 
-            {/* <Row>
-                <PrimaryNav pathname={pathname}/>
-            </Row> */}
-
             <Row className="maincontent" role="main">
                 { children }
             </Row>
 
         </Grid>
-
-        <Footer/>
 
         <TrackDuck/>
 
