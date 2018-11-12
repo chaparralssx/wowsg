@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Masthead from './Masthead'
-// import PrimaryNav from './PrimaryNav'
-import Footer from './Footer'
+import PrimaryNav from './PrimaryNav'
 import TrackDuck from './TrackDuck'
 import {Grid, Row} from 'react-bootstrap/lib'
-import GlobalNavbar from './GlobalNavbar'
 // import Carousel from './Carousel'
 import React from 'react'
 import Router from 'next/router'
@@ -34,7 +31,7 @@ export default ({ children, title = '', pathname, className }) => (
         </Head>
         
         
-        {/* <GlobalNavbar/> */}
+        <PrimaryNav/>
 
         <Grid>
 
