@@ -1,90 +1,104 @@
+body {
+    padding-top: 70px;
+}
+
 .PrimaryNav {
+    .navbar-inverse();
     .toggle-title { 
         display: none;
     }
     .link-title {
         display: none;
     }
-
-    @media (min-width: @screen-sm-min) { // 768px+
-        &.navbar-default {
-            background-color: transparent;
-            .navbar-nav {
-                > .active > a,
-                > .active > a:hover,
-                > .active > a:focus {
-                    background: transparent;
-                    color: white;
-                }
-                > .open > a, 
-                > .open > a:hover {
-                    background: transparent;
-                    color: inherit;
-                }
-            }
+    .home-logo {
+        a{
+            padding-top: 10px;
+            padding-bottom: 0;
         }
-        .container-fluid,
-        .container {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .navbar-collapse {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .navbar-nav {
-            display: table;
-            width: 100%;
-            float: none;
-            > li {
-                display: table-cell;
-                float: none;
-                vertical-align: middle;
-                text-align: center;
-                height: 100%;
-                border-left: 1px solid @gray-lighter;
-                &:first-of-type {
-                    font-size: 1.35em;
-                    border-left: none;
-                    border-radius: @border-radius-base 0 0 @border-radius-base;
-                    width: 50px;
-                }
-                &:hover,
-                &:focus {
-                    background-color: @brand-primary;
-                    color: white;
-                    > a {
-                        color: white;
-                    }
-                }
-                &.open > a {
-                    &:focus {
-                        color: @gray-light;
-                    }
-                }
-                &.open:hover > a {
-                    &:focus {
-                        color: white;
-                    }
-                }
-                &.active {
-                    background-color: @brand-primary;
-                    > a {
-                        color: white;
-                    }
-                }
-
-            }
-        }
-
-        // HOME ICON
-        &.navbar-default .navbar-nav {
-            > li:first-of-type > a {
-                border-radius: @border-radius-base 0 0 @border-radius-base;
-                min-width: @font-size-base * 3.75;
-            }
+        img {
+            max-height: 30px;
         }
     }
+
+    // @media (min-width: @screen-sm-min) { // 768px+
+    //     &.navbar-default {
+    //         background-color: transparent;
+    //         .navbar-nav {
+    //             > .active > a,
+    //             > .active > a:hover,
+    //             > .active > a:focus {
+    //                 background: transparent;
+    //                 color: white;
+    //             }
+    //             > .open > a, 
+    //             > .open > a:hover {
+    //                 background: transparent;
+    //                 color: inherit;
+    //             }
+    //         }
+    //     }
+    //     .container-fluid,
+    //     .container {
+    //         padding-left: 0;
+    //         padding-right: 0;
+    //     }
+    //     .navbar-collapse {
+    //         padding-left: 0;
+    //         padding-right: 0;
+    //     }
+    //     .navbar-nav {
+    //         display: table;
+    //         width: 100%;
+    //         float: none;
+    //         > li {
+    //             display: table-cell;
+    //             float: none;
+    //             vertical-align: middle;
+    //             text-align: center;
+    //             height: 100%;
+    //             border-left: 1px solid @gray-lighter;
+    //             &:first-of-type {
+    //                 font-size: 1.35em;
+    //                 border-left: none;
+    //                 border-radius: @border-radius-base 0 0 @border-radius-base;
+    //                 width: 50px;
+    //             }
+    //             &:hover,
+    //             &:focus {
+    //                 background-color: @brand-primary;
+    //                 color: white;
+    //                 > a {
+    //                     color: white;
+    //                 }
+    //             }
+    //             &.open > a {
+    //                 &:focus {
+    //                     color: @gray-light;
+    //                 }
+    //             }
+    //             &.open:hover > a {
+    //                 &:focus {
+    //                     color: white;
+    //                 }
+    //             }
+    //             &.active {
+    //                 background-color: @brand-primary;
+    //                 > a {
+    //                     color: white;
+    //                 }
+    //             }
+
+    //         }
+    //     }
+
+    //     // HOME ICON
+    //     &.navbar-default .navbar-nav {
+    //         > li:first-of-type > a {
+    //             border-radius: @border-radius-base 0 0 @border-radius-base;
+    //             min-width: @font-size-base * 3.75;
+    //         }
+    //     }
+    // }
     
     @media (max-width: @screen-md-min) and (min-width: @screen-sm-min) { // 992px
         .navbar-nav > li > a {
