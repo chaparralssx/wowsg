@@ -15,14 +15,58 @@ class PrimaryNav extends React.Component {
 
     render() {
         return (
-            <Navbar collapseOnSelect fluid className="PrimaryNav" aria-label="Primary Navigation">
+            <Navbar collapseOnSelect fluid className="PrimaryNav navbar-fixed-top" aria-label="Primary Navigation">
                 <Navbar.Header>
                     <Navbar.Toggle />
                     <span className="toggle-title">Menu {this.props.pathname}</span>
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} onClick={(e) => link.handleLink(e, '/')} href="/" active={link.isActive(this.props.pathname, '/')}><Glyphicon glyph="home" title="Return to Homepage" /><span className="link-title"> Home</span></NavItem>
+                        <NavItem eventKey={1} onClick={(e) => link.handleLink(e, '/')} href="/" active={link.isActive(this.props.pathname, '/')}className="home-logo"><img src="/static/images/logo-wow-logistics.png" alt="WOW Logistics Logo" title="Return to the homepage" /></NavItem>
+                        <NavDropdown eventKey={2} title="Calendar" id="calendar-dropdown">
+                            <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/calendar')} href="/">Dashboard</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={2.2}>Search</MenuItem>
+                            <MenuItem eventKey={2.3}>Schedule Recurring</MenuItem>
+                            <MenuItem eventKey={2.4}>Orders</MenuItem>
+                            <MenuItem eventKey={2.5}>Door Queues</MenuItem>
+                            <MenuItem eventKey={2.6}>EDI Insights</MenuItem>
+                        </NavDropdown>
+                        <NavDropdown eventKey={3} title="Inventory" id="inventory-dropdown">
+                            <MenuItem eventKey={3.1}>Change Catch Weight</MenuItem>
+                            <MenuItem eventKey={3.2}>Change Product Class</MenuItem>
+                            <MenuItem eventKey={3.3}>Change Product HOLD</MenuItem>
+                            <MenuItem eventKey={3.4}>Change Make Date</MenuItem>
+                            <MenuItem eventKey={3.5}>Edit Inventory</MenuItem>
+                            <MenuItem eventKey={3.6}>Edit Receipt</MenuItem>
+                            <MenuItem eventKey={3.7}>Edit Shipment</MenuItem>
+                            <MenuItem eventKey={3.8}>Ownership Transfers</MenuItem>
+                            <MenuItem eventKey={3.9}>Temperature Transfer</MenuItem>
+                        </NavDropdown>
+                        <NavDropdown eventKey={4} title="Tools" id="tools-dropdown">
+                            <MenuItem eventKey={4.2}>Link 1</MenuItem>
+                            <MenuItem eventKey={4.3}>Link 2</MenuItem>
+                            <MenuItem eventKey={4.4}>Link 3</MenuItem>
+                            <MenuItem eventKey={4.5}>Link 5</MenuItem>
+                        </NavDropdown>
+                        <NavDropdown eventKey={5} title="Reports" id="reports-dropdown">
+                            <MenuItem eventKey={5.2}>Link 1</MenuItem>
+                            <MenuItem eventKey={5.3}>Link 2</MenuItem>
+                            <MenuItem eventKey={5.4}>Link 3</MenuItem>
+                            <MenuItem eventKey={5.5}>Link 5</MenuItem>
+                        </NavDropdown>
+                        <NavDropdown eventKey={6} title="Print" id="print-dropdown">
+                            <MenuItem eventKey={6.2}>Link 1</MenuItem>
+                            <MenuItem eventKey={6.3}>Link 2</MenuItem>
+                            <MenuItem eventKey={6.4}>Link 3</MenuItem>
+                            <MenuItem eventKey={6.5}>Link 5</MenuItem>
+                        </NavDropdown>
+                        <NavDropdown eventKey={7} title="Links" id="links-dropdown">
+                            <MenuItem eventKey={7.2}>Link 1</MenuItem>
+                            <MenuItem eventKey={7.3}>Link 2</MenuItem>
+                            <MenuItem eventKey={7.4}>Link 3</MenuItem>
+                            <MenuItem eventKey={7.5}>Link 5</MenuItem>
+                        </NavDropdown>
                         <NavDropdown eventKey={2} title="Style Guide" id="wsg-nav-dropdown">
                             <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/alerts')} href="/alerts" active={link.isActive(this.props.pathname, '/alerts')}>Alerts</MenuItem>
                             <MenuItem eventKey={2.2} onClick={(e) => link.handleLink(e, '/button')} href="/button" active={link.isActive(this.props.pathname, '/button')}>Button</MenuItem>
@@ -35,44 +79,6 @@ class PrimaryNav extends React.Component {
                             <MenuItem eventKey={2.9} onClick={(e) => link.handleLink(e, '/tables')} href="/tables" active={link.isActive(this.props.pathname, '/tables')}>Tables</MenuItem>
                             <MenuItem eventKey={2.10} onClick={(e) => link.handleLink(e, '/typography') } href="/typography" active={link.isActive(this.props.pathname, '/typography')}>Typography</MenuItem>
                             <MenuItem eventKey={2.11} onClick={(e) => link.handleLink(e, '/words') } href="/words" active={link.isActive(this.props.pathname, '/words')}>Words</MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={2} title="Warehousing" id="nh-nav-dropdown">
-                            <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/warehousing')} href="/">Warehousing &amp; Distribution</MenuItem>
-                            <MenuItem divider />
-                            <MenuItem eventKey={2.2}>Link 1</MenuItem>
-                            <MenuItem eventKey={2.3}>Link 2</MenuItem>
-                            <MenuItem eventKey={2.4}>Link 3</MenuItem>
-                            <MenuItem eventKey={2.5}>Link 5</MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={3} title="Transportation" id="section-3-dropdown">
-                        <MenuItem eventKey={3.2}>Link 1</MenuItem>
-                        <MenuItem eventKey={3.3}>Link 2</MenuItem>
-                        <MenuItem eventKey={3.4}>Link 3</MenuItem>
-                        <MenuItem eventKey={3.5}>Link 5</MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={4} title="Commodity Purchase" id="section-4-dropdown" className="hidden">
-                        <MenuItem eventKey={4.2}>Link 1</MenuItem>
-                        <MenuItem eventKey={4.3}>Link 2</MenuItem>
-                        <MenuItem eventKey={4.4}>Link 3</MenuItem>
-                        <MenuItem eventKey={4.5}>Link 5</MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={5} title="Build-to-Suit" id="section-5-dropdown">
-                        <MenuItem eventKey={5.2}>Link 1</MenuItem>
-                        <MenuItem eventKey={5.3}>Link 2</MenuItem>
-                        <MenuItem eventKey={5.4}>Link 3</MenuItem>
-                        <MenuItem eventKey={5.5}>Link 5</MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={6} title="Contract Ops" id="section-6-dropdown">
-                        <MenuItem eventKey={6.2}>Link 1</MenuItem>
-                        <MenuItem eventKey={6.3}>Link 2</MenuItem>
-                        <MenuItem eventKey={6.4}>Link 3</MenuItem>
-                        <MenuItem eventKey={6.5}>Link 5</MenuItem>
-                        </NavDropdown>
-                        <NavDropdown eventKey={7} title="Locations" id="section-7-dropdown">
-                        <MenuItem eventKey={7.2}>Link 1</MenuItem>
-                        <MenuItem eventKey={7.3}>Link 2</MenuItem>
-                        <MenuItem eventKey={7.4}>Link 3</MenuItem>
-                        <MenuItem eventKey={7.5}>Link 5</MenuItem>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
