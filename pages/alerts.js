@@ -9,7 +9,7 @@ export default class extends Page {
         return (
             <Layout title="Alerts | " pathname={this.props.pathname}>
                 <PageHeader>
-                    Alerts <small><a href="https://react-bootstrap.github.io/components.html#alerts" target="_blank">React Documentation</a></small>
+                    Alerts
                 </PageHeader>
 
 
