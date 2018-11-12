@@ -18,17 +18,14 @@ export default class extends Page {
     render() {
         return (
             <Layout title="" pathname={this.props.pathname}>
-                {/* <Jumbotron className="jumbotron-yvonne">
-                    <p>&ldquo;I love feeling like I’m actually making a difference.&rdquo;</p>
-                    <p><a href="https://youtu.be/GSLNJkx6-Ec" target="_blank" className="btn btn-primary">Watch Yvonne’s Story</a></p>
-                </Jumbotron> */}
+
                 <PageHeader>
-                    WOW Logistics Style Guide
+                    WOW WMS Style Guide
                 </PageHeader>
 
-                <p>This is the official WOW Logistics Style Guide.</p>
+                <p>This is the official WOW Logistics WMS Style Guide.</p>
 
-                <p>It is a living document, and will be updated often.  Select a page from the Style Guide menu drop down above.</p>
+                <p>It is a living document, and will be updated often.</p>
             </Layout>
         )
     }
