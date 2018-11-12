@@ -46,8 +46,36 @@ export default class extends Page {
                     </article>
 
 
-                    <article>
-                        <h3>Placement</h3>
+                    <article title="Defined 11/12/2018">
+                        <h3>Capitalization</h3>
+                        <ul>
+                            <li>Use Title Case</li>
+                        </ul>
+                    </article>
+
+
+                    <article title="Defined 11/12/2018">
+                        <h3>Placement / Order</h3>
+                        <ul>
+                            <li>When grouping any combination of create, update*, delete and cancel buttons (see Wording section), display in this order:
+                                <ol>
+                                    <li>create</li>
+                                    <li>update</li>
+                                    <li>cancel</li>
+                                    <li>delete</li>
+                                </ol>
+                            </li>
+                            <li>Always right-align the Delete (or equivalent) button</li>
+                        </ul>
+                        <p>* Use "Save" instead of "Update" ("Update" shouldn't appear in a button grouping)</p>
+                        <div className="example">
+                            <ButtonToolbar>
+                                <Button bsStyle="primary">Save</Button>
+                                <Button bsStyle="default">Update</Button>
+                                <Button bsStyle="default">Cancel</Button>
+                                <Button bsStyle="danger pull-right">Delete</Button>
+                            </ButtonToolbar>
+                        </div>
                     </article>
 
 
@@ -193,12 +221,12 @@ export default class extends Page {
                 </section>
 
 
-                <section>
+                <section title="Defined 11/12/2018">
                     <h2>Modals</h2>
 
                     <h3>Confirmation</h3>
                     <ul>
-                        <li>Display the primary (action) button first</li>
+                        <li>Display the safe action button first (typically "Cancel")</li>
                         <li>Instead of "Yes" or "No", label the buttons with actions such as "Delete" and "Cancel"</li>
                         <li>If the action will delete or inactivate date, use the "btn-danger" class</li>
                         <li>Except when space is very limited, do not display an icon next to the button text</li>
@@ -207,42 +235,106 @@ export default class extends Page {
                     <div className="example">
                         <p>Are you sure you want to delete this record?</p>
                         <ButtonToolbar>
-                            <Button bsStyle="danger">Delete</Button>
                             <Button bsStyle="default">Cancel</Button>
+                            <Button bsStyle="danger">Delete</Button>
                         </ButtonToolbar>
                     </div>
                 </section>
 
 
-                <section>
+                <section title="Defined 11/12/2018">
                     <h2>Wording</h2>
 
-                    <h3>Delete (not Remove, Trash)</h3>
+                    <p>Always add descriptive titles when using glyphicons</p>
+
+                    <h3>Add (not Create)</h3>
                     <ul>
-                        <li>Use "Delete" when a record will be deleted</li>
-                        <li>When space is limited, use the trash icon (<span className="glyphicon glyphicon-trash" aria-hidden="true"></span>) insted of text
+                        <li>Use when the form's values will be used to create a new record</li>
+                        <li>When space is limited, use the plus icon (<span title="Add" className="glyphicon glyphicon-plus" aria-hidden="true"></span>) insted of text
                             <pre>
-                                &lt;span className="glyphicon glyphicon-trash" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span title="Add" class="glyphicon glyphicon-plus" aria-hidden="true"&gt;&lt;/span&gt;
                             </pre>
                         </li>
                     </ul>
 
-                    <h3>Edit (not Change, Modify)</h3>
+                    <h3>Back (not Previous)</h3>
                     <ul>
-                        <li>Use "Edit" when a record will be modified</li>
-                        <li>When space is limited, use the pencil icon (<span className="glyphicon glyphicon-pencil" aria-hidden="true"></span>) insted of text
+                        <li>Use to navigate to the preceding page or form (one step backward in the process only; not to the beginning)</li>
+                        <li>Save the form's data prior to navigating away from it</li>
+                        <li>When space is limited, use the step-backward icon (<span title="Back" className="glyphicon glyphicon-step-backward" aria-hidden="true"></span>) insted of text
                             <pre>
-                                &lt;span className="glyphicon glyphicon-pencil" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span title="Back" class="glyphicon glyphicon-step-backward" aria-hidden="true"&gt;&lt;/span&gt;
+                            </pre>
+                        </li>
+                    </ul>
+
+                    <h3>Cancel (not Close, No)</h3>
+                    <ul>
+                        <li>Use to close the current view or process without saving</li>
+                        <li>When space is limited, use the remove icon (<span title="Cancel" className="glyphicon glyphicon-remove" aria-hidden="true"></span>) insted of text
+                            <pre>
+                                &lt;span title="Cancel" class="glyphicon glyphicon-remove" aria-hidden="true"&gt;&lt;/span&gt;
+                            </pre>
+                        </li>
+                    </ul>
+
+                    <h3>Delete (not Remove, Trash)</h3>
+                    <ul>
+                        <li>Use when a record will be deleted</li>
+                        <li>When space is limited, use the trash icon (<span title="Delete" className="glyphicon glyphicon-trash" aria-hidden="true"></span>) insted of text
+                            <pre>
+                                &lt;span title="Delete" class="glyphicon glyphicon-trash" aria-hidden="true"&gt;&lt;/span&gt;
+                            </pre>
+                        </li>
+                    </ul>
+
+                    <h3>Download (not Save)</h3>
+                    <ul>
+                        <li>Use when a file will be generated and prompted for a save location</li>
+                        <li>When space is limited, use the save-file icon (<span title="Download" className="glyphicon glyphicon-save-file" aria-hidden="true"></span>) insted of text
+                            <pre>
+                                &lt;span title="Download" class="glyphicon glyphicon-save-file" aria-hidden="true"&gt;&lt;/span&gt;
+                            </pre>
+                        </li>
+                    </ul>
+
+                    <h3>Edit (not Change, Modify, Update)</h3>
+                    <ul>
+                        <li>Use when a record will be modified</li>
+                        <li>When space is limited, use the pencil icon (<span title="Edit" className="glyphicon glyphicon-pencil" aria-hidden="true"></span>) insted of text
+                            <pre>
+                                &lt;span title="Edit" class="glyphicon glyphicon-pencil" aria-hidden="true"&gt;&lt;/span&gt;
+                            </pre>
+                        </li>
+                    </ul>
+
+                    <h3>Next (not Continue)</h3>
+                    <ul>
+                        <li>Use to display a form that will create a new record</li>
+                        <li>Save the form's data prior to navigating away from it</li>
+                        <li>When space is limited, use the step-forward icon (<span title="Next" className="glyphicon glyphicon-step-forward" aria-hidden="true"></span>) insted of text
+                            <pre>
+                                &lt;span title="Next" class="glyphicon glyphicon-step-forward" aria-hidden="true"&gt;&lt;/span&gt;
                             </pre>
                         </li>
                     </ul>
 
                     <h3>New (not Add, More, Create)</h3>
                     <ul>
-                        <li>Use "New" when a record will be created</li>
-                        <li>When space is limited, use the plus icon (<span className="glyphicon glyphicon-plus" aria-hidden="true"></span>) insted of text
+                        <li>Use to display a form that will create a new record</li>
+                        <li>When space is limited, use the plus icon (<span title="New" className="glyphicon glyphicon-plus" aria-hidden="true"></span>) insted of text
                             <pre>
-                                &lt;span className="glyphicon glyphicon-plus" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span title="New" class="glyphicon glyphicon-plus" aria-hidden="true"&gt;&lt;/span&gt;
+                            </pre>
+                        </li>
+                    </ul>
+
+                    <h3>Save (not Update)</h3>
+                    <ul>
+                        <li>Use when form's values will create a new record or overwrite an existing record</li>
+                        <li>When space is limited, use the floppy-disk icon (<span title="Save" className="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>) insted of text
+                            <pre>
+                                &lt;span title="Save" class="glyphicon glyphicon-floppy-disk" aria-hidden="true"&gt;&lt;/span&gt;
                             </pre>
                         </li>
                     </ul>
