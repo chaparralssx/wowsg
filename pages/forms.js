@@ -145,6 +145,7 @@ export default class extends Page {
                         <li title="Defined 11/12/2018">Case: Title Case</li>
                         <li title="Defined 11/12/2018">When a default option is not appropriate, start the options list with "Select One" (note capital "O")</li>
                         <li title="Defined 11/12/2018">If the selection is optional, follow the "Select One" text with " (optional)" (lower case)</li>
+                        <li title="Defined 11/13/2018">Sort options alphabetically</li>
                     </ul>
 
                     <div className="example" title="Defined 11/12/2018">
