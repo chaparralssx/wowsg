@@ -306,6 +306,11 @@ export default class extends Page {
                                 &lt;span title="Edit" class="glyphicon glyphicon-pencil" aria-hidden="true"&gt;&lt;/span&gt;
                             </pre>
                         </li>
+                    </ul>                    
+
+                    <h3>Putaway (not "OK")</h3>
+                    <ul>
+                        <li>Use to complete the action of moving a pallet to an inventory location (not Staging)</li>
                     </ul>
 
                     <h3>Next (not Continue)</h3>
@@ -327,6 +332,12 @@ export default class extends Page {
                                 &lt;span title="New" class="glyphicon glyphicon-plus" aria-hidden="true"&gt;&lt;/span&gt;
                             </pre>
                         </li>
+                    </ul>
+
+                    <h3>Ok (not OK)</h3>
+                    <ul>
+                        <li>Use for confirmation actions only (do not use to submit or as Next button)</li>
+                        <li>Capitalize the first letter only (always "Ok" not "OK")</li>
                     </ul>
 
                     <h3>Save (not Update)</h3>
