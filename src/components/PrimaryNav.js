@@ -67,19 +67,27 @@ class PrimaryNav extends React.Component {
                             <MenuItem eventKey={7.4}>Link 3</MenuItem>
                             <MenuItem eventKey={7.5}>Link 5</MenuItem>
                         </NavDropdown>
-                        <NavDropdown eventKey={2} title="Style Guide" id="wsg-nav-dropdown">
-                            <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/alerts')} href="/alerts" active={link.isActive(this.props.pathname, '/alerts')}>Alerts</MenuItem>
-                            <MenuItem eventKey={2.2} onClick={(e) => link.handleLink(e, '/button')} href="/button" active={link.isActive(this.props.pathname, '/button')}>Button</MenuItem>
-                            <MenuItem eventKey={2.3} onClick={(e) => link.handleLink(e, '/colorpallete')} href="/colorpallete" active={link.isActive(this.props.pathname, '/colorpallete')}>Color Pallete</MenuItem>
-                            <MenuItem eventKey={2.4} onClick={(e) => link.handleLink(e, '/forms')} href="/forms" active={link.isActive(this.props.pathname, '/forms')}>Forms</MenuItem>
-                            <MenuItem eventKey={2.5} onClick={(e) => link.handleLink(e, '/signin')} href="/signin" active={link.isActive(this.props.pathname, '/signin')}>Sign In Form</MenuItem>
-                            <MenuItem eventKey={2.6} onClick={(e) => link.handleLink(e, '/navigation') } href="/navigation" active={link.isActive(this.props.pathname, '/navigation')}>Navigation</MenuItem>
-                            <MenuItem eventKey={2.7} onClick={(e) => link.handleLink(e, '/panel')} href="/panel" active={link.isActive(this.props.pathname, '/panel')}>Panel</MenuItem>
-                            <MenuItem eventKey={2.8} onClick={(e) => link.handleLink(e, '/tabs')} href="/tabs" active={link.isActive(this.props.pathname, '/tabs')}>Tabs</MenuItem>
-                            <MenuItem eventKey={2.9} onClick={(e) => link.handleLink(e, '/tables')} href="/tables" active={link.isActive(this.props.pathname, '/tables')}>Tables</MenuItem>
-                            <MenuItem eventKey={2.10} onClick={(e) => link.handleLink(e, '/typography') } href="/typography" active={link.isActive(this.props.pathname, '/typography')}>Typography</MenuItem>
-                            <MenuItem eventKey={2.11} onClick={(e) => link.handleLink(e, '/words') } href="/words" active={link.isActive(this.props.pathname, '/words')}>Words</MenuItem>
+                        <NavDropdown eventKey={8} title="RF" id="links-dropdown">
+                            <MenuItem eventKey={8.1} onClick={(e) => link.handleLink(e, '/rf-home')} href="/rf-home" active={link.isActive(this.props.pathname, '/rf-home')}>Home</MenuItem>
+                            <MenuItem eventKey={8.2} onClick={(e) => link.handleLink(e, '/rf-calendar')} href="/rf-calendar" active={link.isActive(this.props.pathname, '/rf-calendar')}>Calendar</MenuItem>
+                            <MenuItem eventKey={8.3} onClick={(e) => link.handleLink(e, '/rf-receiving')} href="/rf-receiving" active={link.isActive(this.props.pathname, '/rf-receiving')}>Receiving</MenuItem>
+                            <MenuItem eventKey={8.4} onClick={(e) => link.handleLink(e, '/rf-shipping')} href="/rf-shipping" active={link.isActive(this.props.pathname, '/rf-shipping')}>Shipping</MenuItem>
+                            <MenuItem eventKey={8.5} onClick={(e) => link.handleLink(e, '/rf-spotcheck')} href="/rf-spotcheck" active={link.isActive(this.props.pathname, '/rf-spotcheck')}>Spot Check</MenuItem>
                         </NavDropdown>
+                        <NavDropdown eventKey={1} title="Style Guide" id="wsg-nav-dropdown">
+                            <MenuItem eventKey={1.1} onClick={(e) => link.handleLink(e, '/alerts')} href="/alerts" active={link.isActive(this.props.pathname, '/alerts')}>Alerts</MenuItem>
+                            <MenuItem eventKey={1.2} onClick={(e) => link.handleLink(e, '/button')} href="/button" active={link.isActive(this.props.pathname, '/button')}>Button</MenuItem>
+                            <MenuItem eventKey={1.3} onClick={(e) => link.handleLink(e, '/colorpallete')} href="/colorpallete" active={link.isActive(this.props.pathname, '/colorpallete')}>Color Pallete</MenuItem>
+                            <MenuItem eventKey={1.4} onClick={(e) => link.handleLink(e, '/forms')} href="/forms" active={link.isActive(this.props.pathname, '/forms')}>Forms</MenuItem>
+                            <MenuItem eventKey={1.5} onClick={(e) => link.handleLink(e, '/signin')} href="/signin" active={link.isActive(this.props.pathname, '/signin')}>Sign In Form</MenuItem>
+                            <MenuItem eventKey={1.6} onClick={(e) => link.handleLink(e, '/navigation') } href="/navigation" active={link.isActive(this.props.pathname, '/navigation')}>Navigation</MenuItem>
+                            <MenuItem eventKey={1.7} onClick={(e) => link.handleLink(e, '/panel')} href="/panel" active={link.isActive(this.props.pathname, '/panel')}>Panel</MenuItem>
+                            <MenuItem eventKey={1.8} onClick={(e) => link.handleLink(e, '/tabs')} href="/tabs" active={link.isActive(this.props.pathname, '/tabs')}>Tabs</MenuItem>
+                            <MenuItem eventKey={1.9} onClick={(e) => link.handleLink(e, '/tables')} href="/tables" active={link.isActive(this.props.pathname, '/tables')}>Tables</MenuItem>
+                            <MenuItem eventKey={1.10} onClick={(e) => link.handleLink(e, '/typography') } href="/typography" active={link.isActive(this.props.pathname, '/typography')}>Typography</MenuItem>
+                            <MenuItem eventKey={1.11} onClick={(e) => link.handleLink(e, '/words') } href="/words" active={link.isActive(this.props.pathname, '/words')}>Words</MenuItem>
+                        </NavDropdown>
+                        <MenuItem eventKey={8.1} onClick={(e) => link.handleLink(e, '/sitemap')} href="/sitemap" active={link.isActive(this.props.pathname, '/sitemap')}>Site Map</MenuItem>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
