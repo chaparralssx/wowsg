@@ -49,6 +49,7 @@ export default class extends Page {
                         <li>Italicized *</li>
                         <li>Color is @brand-danger (#c9442a) *</li>
                         <li>Place a @brand-danger (#c9442a) colored asterisk before "required" message *</li>
+                        <li>If the input is a select list, always display "Select One" as the first option</li>
                     </ul>
 
                     <p className="small">* Automatic when .required-message class is added to parent element, e.g. <code>&lt;div class="required-message"&gt;Required&lt;/div&gt;</code></p>
@@ -143,8 +144,11 @@ export default class extends Page {
 
                     <ul>
                         <li title="Defined 11/12/2018">Case: Title Case</li>
-                        <li title="Defined 11/12/2018">When a default option is not appropriate, start the options list with "Select One" (note capital "O")</li>
-                        <li title="Defined 11/12/2018">If the selection is optional, follow the "Select One" text with " (optional)" (lower case)</li>
+                        <li title="Defined 12/03/2018">If the field is required, make the first option "Select One"
+                            <ul>
+                                <li title="Defined 11/12/2018">When a default option is not appropriate, start the options list with "Select One" (note capital "O")</li>
+                            </ul>
+                        </li>
                         <li title="Defined 11/13/2018">Sort options alphabetically</li>
                     </ul>
 
