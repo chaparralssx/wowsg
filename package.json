@@ -35,7 +35,8 @@
     "build": "next build",
     "start": "set NODE_ENV=production && node index.js"
   },
-  "author": "",
+  "author": "R. Scott Blamey",
+  "repository": "https://github.com/chaparralssx/wowsg",
   "license": "ISC",
   "jest": {
     "collectCoverage": true,
