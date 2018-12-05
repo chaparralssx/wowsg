@@ -28,6 +28,7 @@ export default ({ children, title = '', pathname, sections, backlink }) => (
             <link href="/static/compiled/css/theme.css" rel="stylesheet" type="text/css" />
             <link href="/static/compiled/css/nprogress.css" rel="stylesheet" type="text/css" />
             <link href="/static/compiled/css/styleguide.css" rel="stylesheet" type="text/css" />
+            <link href="/static/compiled/css/rf.css" rel="stylesheet" type="text/css" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
         </Head>
 
