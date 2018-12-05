@@ -9,7 +9,8 @@ import NProgress from 'nprogress'
 
 Router.onRouteChangeStart = (url) => {
     console.log(`Loading: ${url}`);
-    NProgress.start();
+    NProgress.start();    
+    document.html.classList.add('RFLayout');
 };
 Router.onRouteChangeComplete = () => {
     NProgress.done();
@@ -18,7 +19,7 @@ Router.onRouteChangeComplete = () => {
 Router.onRouteChangeError = () => NProgress.done();
 
 export default ({ children, title = '', pathname, sections, backlink }) => (
-    <div className="RFLayout">
+    <div>
         <Head>
             <title>{ title } | WOW Logistics</title>
             <link rel="icon" type="image/icon" href="/static/images/favicon.ico" />

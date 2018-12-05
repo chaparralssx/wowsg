@@ -17,6 +17,7 @@ gulp.task('less', function () {
 
     // Preprocess Style Guide-specific CSS
     gulp.src('./css/styleguide.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
+    gulp.src('./css/rf.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
 
     return gulp.src('./css/theme.less')
         .pipe(less({
