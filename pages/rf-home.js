@@ -17,6 +17,7 @@ export default class extends Page {
                             <a className="btn btn-default" href="rf-spotcheck" role="button">[4] Spot Check</a>
                             <a className="btn btn-default" href="#" role="button">[5] Inventory Management</a>
                             <a className="btn btn-default" href="#" role="button">[6] Miscellaneous</a>
+                            <a className="btn btn-default" href="calendar" role="button">[7] Desktop Calendar</a>
                         </div>
                     </form>
                 </nav>
