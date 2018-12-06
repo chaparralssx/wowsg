@@ -223,6 +223,16 @@ export default class extends Page {
                 </section>
 
 
+                <section className="">
+                    <h2>Form Submission</h2>
+
+                    <ul>
+                        <li>When a form is submitted that will update the content on the form's page (i.e. submitting the form does not navigate the user away from the form page), clear results previously displayed on the page and disable to submit button so it cannot be clicked multiple times.</li>
+                    </ul>
+
+                </section>
+
+
                 <IframeResponsiveExamples url="/form-example" desktopHeight={900} mobileHeight={1100} />
 
 
