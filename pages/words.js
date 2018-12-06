@@ -38,6 +38,7 @@ export default class extends Page {
                         <p>Do not hyphenate these words</p>
                         <ul>
                             <li>Checklist</li>
+                            <li>Putaway</li>
                         </ul>
                     </article>
 
@@ -45,11 +46,12 @@ export default class extends Page {
                         <h3>Spaces in Words</h3>
                         <p>Always place a space in these words</p>
                         <ul>
-                            <li></li>
+                            <li>Real time</li>
                         </ul>
                         <p>Do not place a space in these words</p>
                         <ul>
                             <li>Checklist</li>
+                            <li>Putaway</li>
                         </ul>
                     </article>
 
