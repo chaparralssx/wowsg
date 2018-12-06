@@ -87,7 +87,7 @@ class PrimaryNav extends React.Component {
                             <MenuItem eventKey={1.10} onClick={(e) => link.handleLink(e, '/typography') } href="/typography" active={link.isActive(this.props.pathname, '/typography')}>Typography</MenuItem>
                             <MenuItem eventKey={1.11} onClick={(e) => link.handleLink(e, '/words') } href="/words" active={link.isActive(this.props.pathname, '/words')}>Words</MenuItem>
                         </NavDropdown>
-                        <MenuItem eventKey={8.1} onClick={(e) => link.handleLink(e, '/sitemap')} href="/sitemap" active={link.isActive(this.props.pathname, '/sitemap')}>Site Map</MenuItem>
+                        {/* <MenuItem eventKey={8.1} onClick={(e) => link.handleLink(e, '/sitemap')} href="/sitemap" active={link.isActive(this.props.pathname, '/sitemap')}>Site Map</MenuItem> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
