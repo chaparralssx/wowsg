@@ -48,10 +48,16 @@ After the install process is complete, you will be able to run the application u
 
 ```bash
 $ npm run dev
-``
+```
 ##  Preprocessing LESS (CSS)
 
-A watch script for LESS files is set up. To automatically trigger preprocessing, open a separate bash window and run:
+To compile the LESS files into a production .css file, open a second bash window and run:
+
+```bash
+$ gulp less
+```
+
+A watch script for LESS files is set up, though it doesn't run reliably. To automatically trigger preprocessing, open a separate bash window and run:
 
 ```bash
 $ gulp watch
