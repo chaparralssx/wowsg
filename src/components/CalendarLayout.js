@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import PrimaryNav from './PrimaryNav'
+import {Grid} from 'react-bootstrap/lib'
 import TrackDuck from './TrackDuck'
-import {Grid, Row} from 'react-bootstrap/lib'
-// import Carousel from './Carousel'
 import React from 'react'
 import Router from 'next/router'
 import NProgress from 'nprogress'
@@ -20,7 +19,7 @@ Router.onRouteChangeError = () => NProgress.done();
 export default ({ children, title = '', pathname, className }) => (
     <div className={ className }>
         <Head>
-            <title>{ title } Calendar - WOW Logistics</title>
+            <title>Calendar { title } - WOW Logistics</title>
             <link rel="icon" type="image/icon" href="/static/images/favicon.ico" />
             <meta charSet='utf-8' />
             <meta name='viewport' content='initial-scale=1.0, width=device-width' />
@@ -33,23 +32,9 @@ export default ({ children, title = '', pathname, className }) => (
         
         <PrimaryNav/>
 
-        <Grid>
-
-            {/* <Row>            
-                <Masthead/>
-            </Row> */}
-
-            {/* <Row>
-                <PrimaryNav pathname={pathname}/>
-            </Row> */}
-
-            <Row className="maincontent" role="main">
-                { children }
-            </Row>
-
+        <Grid fluid="true" className="maincontent" role="main">
+            { children }
         </Grid>
-
-        {/* <Footer/> */}
 
         <TrackDuck/>
 
