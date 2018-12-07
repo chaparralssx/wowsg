@@ -24,7 +24,7 @@ class PrimaryNav extends React.Component {
                     <Nav>
                         <NavItem eventKey={1} onClick={(e) => link.handleLink(e, '/')} href="/" active={link.isActive(this.props.pathname, '/')}className="home-logo"><img src="/static/images/logo-wow-logistics.png" alt="WOW Logistics Logo" title="Return to the homepage" /></NavItem>
                         <NavDropdown eventKey={2} title="Calendar" id="calendar-dropdown">
-                            <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/calendar')} href="/">Dashboard</MenuItem>
+                            <MenuItem eventKey={2.1} onClick={(e) => link.handleLink(e, '/dashboard')} href="/">Dashboard</MenuItem>
                             <MenuItem divider />
                             <MenuItem eventKey={2.2}>Search</MenuItem>
                             <MenuItem eventKey={2.3}>Schedule Recurring</MenuItem>
