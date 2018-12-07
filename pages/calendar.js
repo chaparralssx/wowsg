@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../src/components/CalendarLayout'
 import Calendar from '../src/components/Calendar'
+import QuickAppointmentForm from '../src/components/QuickAppointmentForm'
 import AppointmentSummary from '../src/components/AppointmentSummary'
 import Page from '../src/components/Page'
 
@@ -24,19 +25,21 @@ export default class extends Page {
                     <div className="dashboardApps">
                         <h2 className="hidden">Dashboard Applications</h2>
                         <ul className="nav nav-tabs" role="tablist">
-                            <li role="presentation" className="active"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a></li>
+                            <li role="presentation"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a></li>
                             <li role="presentation"><a href="#group" aria-controls="group" role="tab" data-toggle="tab">Group</a></li>
                             <li role="presentation"><a href="#search" aria-controls="search" role="tab" data-toggle="tab">Search</a></li>
                             <li role="presentation"><a href="#doors" aria-controls="doors" role="tab" data-toggle="tab">Doors</a></li>
                             <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+                            <li role="presentation" className="active"><a href="#appt" aria-controls="appt" role="tab" data-toggle="tab">Appointment</a></li>
                         </ul>
 
                         <div className="tab-content">
-                            <div role="tabpanel" className="tab-pane active" id="summary"><AppointmentSummary /></div>
+                            <div role="tabpanel" className="tab-pane" id="summary"><AppointmentSummary /></div>
                             <div role="tabpanel" className="tab-pane" id="group">Group/UnGroup</div>
                             <div role="tabpanel" className="tab-pane" id="search">Search</div>
                             <div role="tabpanel" className="tab-pane" id="doors">Door Queue</div>
                             <div role="tabpanel" className="tab-pane" id="log">Message Log</div>
+                            <div role="tabpanel" className="tab-pane active" id="appt"><QuickAppointmentForm /></div>
                         </div>
                     </div>
                 </div>
