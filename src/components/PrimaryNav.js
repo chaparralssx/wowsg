@@ -74,18 +74,21 @@ class PrimaryNav extends React.Component {
                             <MenuItem eventKey={8.4} onClick={(e) => link.handleLink(e, '/rf-shipping')} href="/rf-shipping" active={link.isActive(this.props.pathname, '/rf-shipping')}>Shipping</MenuItem>
                             <MenuItem eventKey={8.5} onClick={(e) => link.handleLink(e, '/rf-spotcheck')} href="/rf-spotcheck" active={link.isActive(this.props.pathname, '/rf-spotcheck')}>Spot Check</MenuItem>
                         </NavDropdown>
+                        <NavDropdown eventKey={9} title="Portal" id="links-dropdown">
+                            <MenuItem eventKey={9.1} onClick={(e) => link.handleLink(e, '/p-home')} href="/p-home" active={link.isActive(this.props.pathname, '/p-home')}>Home</MenuItem>
+                        </NavDropdown>
                         <NavDropdown eventKey={1} title="Style Guide" id="wsg-nav-dropdown">
-                            <MenuItem eventKey={1.1} onClick={(e) => link.handleLink(e, '/alerts')} href="/alerts" active={link.isActive(this.props.pathname, '/alerts')}>Alerts</MenuItem>
-                            <MenuItem eventKey={1.2} onClick={(e) => link.handleLink(e, '/button')} href="/button" active={link.isActive(this.props.pathname, '/button')}>Button</MenuItem>
-                            <MenuItem eventKey={1.3} onClick={(e) => link.handleLink(e, '/colorpallete')} href="/colorpallete" active={link.isActive(this.props.pathname, '/colorpallete')}>Color Pallete</MenuItem>
-                            <MenuItem eventKey={1.4} onClick={(e) => link.handleLink(e, '/forms')} href="/forms" active={link.isActive(this.props.pathname, '/forms')}>Forms</MenuItem>
-                            <MenuItem eventKey={1.5} onClick={(e) => link.handleLink(e, '/signin')} href="/signin" active={link.isActive(this.props.pathname, '/signin')}>Sign In Form</MenuItem>
-                            <MenuItem eventKey={1.6} onClick={(e) => link.handleLink(e, '/navigation') } href="/navigation" active={link.isActive(this.props.pathname, '/navigation')}>Navigation</MenuItem>
-                            <MenuItem eventKey={1.7} onClick={(e) => link.handleLink(e, '/panel')} href="/panel" active={link.isActive(this.props.pathname, '/panel')}>Panel</MenuItem>
-                            <MenuItem eventKey={1.8} onClick={(e) => link.handleLink(e, '/tabs')} href="/tabs" active={link.isActive(this.props.pathname, '/tabs')}>Tabs</MenuItem>
-                            <MenuItem eventKey={1.9} onClick={(e) => link.handleLink(e, '/tables')} href="/tables" active={link.isActive(this.props.pathname, '/tables')}>Tables</MenuItem>
-                            <MenuItem eventKey={1.10} onClick={(e) => link.handleLink(e, '/typography') } href="/typography" active={link.isActive(this.props.pathname, '/typography')}>Typography</MenuItem>
-                            <MenuItem eventKey={1.11} onClick={(e) => link.handleLink(e, '/words') } href="/words" active={link.isActive(this.props.pathname, '/words')}>Words</MenuItem>
+                            <MenuItem eventKey={1.1} onClick={(e) => link.handleLink(e, '/sg-alerts')} href="/sg-alerts" active={link.isActive(this.props.pathname, '/sg-alerts')}>Alerts</MenuItem>
+                            <MenuItem eventKey={1.2} onClick={(e) => link.handleLink(e, '/sg-button')} href="/sg-button" active={link.isActive(this.props.pathname, '/sg-button')}>Button</MenuItem>
+                            <MenuItem eventKey={1.3} onClick={(e) => link.handleLink(e, '/sg-colorpallete')} href="/sg-colorpallete" active={link.isActive(this.props.pathname, '/sg-colorpallete')}>Color Pallete</MenuItem>
+                            <MenuItem eventKey={1.4} onClick={(e) => link.handleLink(e, '/sg-forms')} href="/sg-forms" active={link.isActive(this.props.pathname, '/sg-forms')}>Forms</MenuItem>
+                            <MenuItem eventKey={1.5} onClick={(e) => link.handleLink(e, '/sg-signin')} href="/sg-signin" active={link.isActive(this.props.pathname, '/sg-signin')}>Sign In Form</MenuItem>
+                            <MenuItem eventKey={1.6} onClick={(e) => link.handleLink(e, '/sg-navigation') } href="/sg-navigation" active={link.isActive(this.props.pathname, '/sg-navigation')}>Navigation</MenuItem>
+                            <MenuItem eventKey={1.7} onClick={(e) => link.handleLink(e, '/sg-panel')} href="/sg-panel" active={link.isActive(this.props.pathname, '/sg-panel')}>Panel</MenuItem>
+                            <MenuItem eventKey={1.8} onClick={(e) => link.handleLink(e, '/sg-tabs')} href="/sg-tabs" active={link.isActive(this.props.pathname, '/sg-tabs')}>Tabs</MenuItem>
+                            <MenuItem eventKey={1.9} onClick={(e) => link.handleLink(e, '/sg-tables')} href="/sg-tables" active={link.isActive(this.props.pathname, '/sg-tables')}>Tables</MenuItem>
+                            <MenuItem eventKey={1.10} onClick={(e) => link.handleLink(e, '/sg-typography') } href="/sg-typography" active={link.isActive(this.props.pathname, '/sg-typography')}>Typography</MenuItem>
+                            <MenuItem eventKey={1.11} onClick={(e) => link.handleLink(e, '/sg-words') } href="/sg-words" active={link.isActive(this.props.pathname, '/sg-words')}>Words</MenuItem>
                         </NavDropdown>
                         {/* <MenuItem eventKey={8.1} onClick={(e) => link.handleLink(e, '/sitemap')} href="/sitemap" active={link.isActive(this.props.pathname, '/sitemap')}>Site Map</MenuItem> */}
                     </Nav>
