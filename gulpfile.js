@@ -16,8 +16,9 @@ gulp.task('less', function () {
     gulp.src('./bower_components/nprogress/nprogress.css').pipe(gulp.dest('./static/compiled/css'));
 
     // Preprocess Style Guide-specific CSS
-    gulp.src('./css/styleguide.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
     gulp.src('./css/rf.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
+    gulp.src('./css/styleguide.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
+    gulp.src('./css/sgexample.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
     gulp.src('./css/sitemap.less').pipe(less({paths: [path.join(__dirname, 'less', 'includes')]})).pipe(gulp.dest('./static/compiled/css'));
 
     return gulp.src('./css/theme.less')
