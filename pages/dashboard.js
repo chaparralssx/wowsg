@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../src/components/CalendarLayout'
-import Calendar from '../src/components/Calendar'
 import QuickAppointmentForm from '../src/components/QuickAppointmentForm'
 import AppointmentSummary from '../src/components/AppointmentSummary'
 import Page from '../src/components/Page'
@@ -20,10 +19,10 @@ export default class extends Page {
     render() {
         return (
             <Layout title="Dashboard" pathname={this.props.pathname}>
-                <h1 className="hidden">Dashboard</h1>
+                <h1 className="sr-only">Dashboard</h1>
                 <div className="col-sm-2">
                     <div className="dashboardApps">
-                        <h2 className="hidden">Dashboard Applications</h2>
+                        <h2 className="sr-only">Dashboard Applications</h2>
                         <ul className="nav nav-tabs" role="tablist">
                             <li role="presentation"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a></li>
                             <li role="presentation"><a href="#group" aria-controls="group" role="tab" data-toggle="tab">Group</a></li>
